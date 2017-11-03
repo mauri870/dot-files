@@ -1,0 +1,7 @@
+# not ignore hidden files and folders
+!.*
+
+# ignore the following
+.config/neofetch/config.conf
+*.bkp
+*.bak
