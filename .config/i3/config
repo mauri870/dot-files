@@ -10,7 +10,7 @@ set $term2 zsh
 set $termTmux tmux new-session
 
 # Wallpaper
-set $wallpaper ~/Imagens/Wallpapers/forest.jpg
+set $wallpaper ~/Imagens/Wallpapers/forest.png
 exec_always --no-startup-id wal -c -i $wallpaper
 exec_always --no-startup-id ~/.config/neofetch/replace_image.sh $wallpaper 
 
@@ -33,9 +33,8 @@ new_window pixel 1
 new_float normal
 
 # Floating terminal
-# for_window [instance="dropdown"] floating enable
 set $resizeDropdown resize set 1280 600
-for_window [instance="dropdown"] $resizeDropdown; move position center; move scratchpad
+for_window [instance="dropdown"] floating enable; $resizeDropdown; move scratchpad
 exec --no-startup-id $term -name dropdown -e $termTmux $term2
 bindsym F12 [instance="dropdown"] scratchpad show; $resizeDropdown; move position center
 bindsym Shift+F12 resize shrink height 10 px or 10 ppt
@@ -192,6 +191,9 @@ assign [class="^google-chrome$"] $ws1
 
 # Apps
 assign [class="Slack"] $ws3
+
+# Torrent
+assign [class="^Transmission-gtk$"] $ws4
 
 # Open specific applications in floating mode
 for_window [title="alsamixer"] floating enable border pixel 1
