@@ -6,8 +6,6 @@ set $monitor eDP1
 
 # Terminal
 set $term urxvt
-set $term2 zsh
-set $termTmux tmux new-session
 
 # Wallpaper
 set $wallpaper ~/Imagens/Wallpapers/forest.png
@@ -35,7 +33,7 @@ new_float normal
 # Floating terminal
 set $resizeDropdown resize set 1280 600
 for_window [instance="dropdown"] floating enable; $resizeDropdown; move scratchpad
-exec --no-startup-id $term -name dropdown -e $termTmux $term2
+exec --no-startup-id $term -name dropdown -e tmux
 bindsym F12 [instance="dropdown"] scratchpad show; $resizeDropdown; move position center
 bindsym Shift+F12 resize shrink height 10 px or 10 ppt
 bindsym Ctrl+F12 resize grow height 10px or 10 ppt
@@ -50,7 +48,7 @@ font xft:Fira Code 12
 # Use Mouse+$mod to drag floating windows
 floating_modifier $mod
 
-bindsym $mod+Return exec $term -e $termTmux $term2
+bindsym $mod+Return exec $term -e zsh
 
 bindsym $mod+Shift+q kill
 
