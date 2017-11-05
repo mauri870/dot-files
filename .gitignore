@@ -1,7 +1,10 @@
-# not ignore hidden files and folders
-!.*
-
-# ignore the following
+*
+!.config/i3
+!.config/neofetch
 .config/neofetch/config.conf
-*.bkp
-*.bak
+!.config/compton.conf
+!.config/dunst
+!.config/polybar
+!.Xresources
+!.xinitrc
+!.profile
