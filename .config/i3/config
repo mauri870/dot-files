@@ -15,10 +15,10 @@ exec_always --no-startup-id ~/.config/neofetch/replace_image.sh $wallpaper
 # Polybar
 exec_always --no-startup-id MONITOR=$monitor $HOME/.config/polybar/launch.sh
 
-# ALSA/AMIXER stuff
-set $inc --no-startup-id amixer sset Master 5%+
-set $dec --no-startup-id amixer sset Master 5%-
-set $mute --no-startup-id amixer sset Master toggle
+# Pulseaudio stuff
+set $inc --no-startup-id pamixer --allow-boost -i 5
+set $dec --no-startup-id pamixer --allow-boost -d 5
+set $mute --no-startup-id pamixer --allow-boost -t
 
 # Extra XF86 keys
 bindsym XF86AudioMute		exec $mute
@@ -55,7 +55,7 @@ bindsym $mod+Shift+q kill
 bindsym $mod+d exec --no-startup-id rofi -show drun
 bindsym $mod+Ctrl+d exec --no-startup-id rofi -show window
 
-bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
+bindsym $mod+Ctrl+m exec --no-startup-id pavucontrol
 
 # Start Applications
 bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
