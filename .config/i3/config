@@ -8,7 +8,7 @@ set $monitor eDP1
 set $term urxvt
 
 # Wallpaper
-set $wallpaper ~/Imagens/Wallpapers/forest.png
+set $wallpaper ~/wallpaper.jpg
 exec_always --no-startup-id wal -c -i $wallpaper
 exec_always --no-startup-id ~/.config/neofetch/replace_image.sh $wallpaper 
 
@@ -31,12 +31,16 @@ new_window pixel 1
 new_float normal
 
 # Floating terminal
-set $resizeDropdown resize set 1280 600
-for_window [instance="dropdown"] floating enable; $resizeDropdown; move scratchpad
 exec --no-startup-id $term -name dropdown -e tmux
-bindsym F12 [instance="dropdown"] scratchpad show; $resizeDropdown; move position center
+for_window [instance="dropdown"] floating enable; resize set 1440 800; move scratchpad
+bindsym F12 [instance="dropdown"] scratchpad show; move position center
 bindsym Shift+F12 resize shrink height 10 px or 10 ppt
 bindsym Ctrl+F12 resize grow height 10px or 10 ppt
+
+# Floating terminal running python with numpy for math
+exec --no-startup-id $term -fn "xft:Fira Code:pixelsize=24" -name math -e python -i -c 'import numpy as np'
+for_window [instance="math"] floating enable; resize set 800 600; move scratchpad
+bindsym $mod+a [instance="math"] scratchpad show; move position center
 
 # change borders
 bindsym $mod+u border none
@@ -122,9 +126,6 @@ bindsym $mod+space focus mode_toggle
 
 # toggle sticky
 bindsym $mod+Shift+s sticky toggle
-
-# focus the parent container
-bindsym $mod+a focus parent
 
 # move the currently focused window to the scratchpad
 bindsym $mod+Shift+minus move scratchpad
