@@ -8,7 +8,7 @@ set $monitor eDP1
 set $term urxvt
 
 # Wallpaper
-set $wallpaper ~/wallpaper.jpg
+set $wallpaper ~/w.jpg
 exec_always --no-startup-id wal -c -i $wallpaper
 exec_always --no-startup-id ~/.config/neofetch/replace_image.sh $wallpaper 
 
@@ -32,8 +32,8 @@ new_float normal
 
 # Floating terminal
 exec --no-startup-id $term -name dropdown -e tmux
-for_window [instance="dropdown"] floating enable; resize set 1440 800; move scratchpad
-bindsym F12 [instance="dropdown"] scratchpad show; move position center
+for_window [instance="dropdown"] floating enable; resize set 1920 600; move position 0 35; move scratchpad
+bindsym F12 [instance="dropdown"] scratchpad show
 bindsym Shift+F12 resize shrink height 10 px or 10 ppt
 bindsym Ctrl+F12 resize grow height 10px or 10 ppt
 
@@ -71,9 +71,9 @@ bindsym $mod+F5 exec $term -e 'mocp'
 bindsym $mod+t exec --no-startup-id pkill compton
 bindsym $mod+Ctrl+t exec --no-startup-id compton -b --xrender-sync-fence
 bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
-bindsym Print exec --no-startup-id i3-scrot
-bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
-bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -s
+bindsym Print exec --no-startup-id ~/scripts/i3-maim
+bindsym $mod+Print --release exec --no-startup-id ~/scripts/i3-maim -w
+bindsym $mod+Shift+Print --release exec --no-startup-id ~/scripts/i3-maim -s
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 bindsym $mod+c exec zenity --calendar
 

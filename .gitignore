@@ -1,4 +1,5 @@
 *
+!scripts
 !.config/i3
 !.config/neofetch
 .config/neofetch/config.conf
