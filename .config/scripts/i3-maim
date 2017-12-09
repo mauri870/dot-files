@@ -1,0 +1,71 @@
+#!/bin/sh
+
+_conf=$HOME/.config/i3-maim.conf
+
+if ! [ -f $_conf ]; then
+	echo "maim_dir=$(xdg-user-dir PICTURES)" > $_conf
+fi
+
+source $_conf
+
+if ! [ -d $maim_dir ]; then
+	mkdir -p $maim_dir
+fi
+
+cmd=(maim -quality 10)
+filename="$maim_dir/Screenshot_$(date +%s).png"
+
+case "$1" in
+	--desk|-d|$NULL)
+	        "$cmd" "$filename" &&
+		sleep 1 &&
+		notify-send "screenshot has been saved in $maim_dir"
+		;;
+	--window|-w)
+		"$cmd" -i $(xdotool getactivewindow) "$filename" &&
+		sleep 1 &&
+		notify-send "screenshot has been saved in $maim_dir"
+		;;
+	--select|-s)
+		notify-send 'select an area for the screenshot' &
+        "$cmd" -s "$filename" &&
+		sleep 1 && notify-send "screenshot has been saved in $maim_dir"
+		;;
+	--help|-h)
+		echo "
+available options:
+-d | --desk    full screen
+-w | --window  active window
+-s | --select  selection
+-h | --help    display this information
+
+The -d or -w options can be used with a delay
+by adding the number of seconds, like for example:
+'i3-maim -w 5'
+
+Default option is 'full screen'.
+
+The file destination can be set in ${_conf}.
+Default is $maim_dir
+"
+		;;
+	*)
+		echo "
+== ! i3-maim: missing or wrong argument ! ==
+
+available options:
+-d | --desk    full screen
+-w | --window  active window
+-s | --select  selection
+-h | --help    display this information
+
+Default option is 'full screen'.
+
+The file destination can be set in ${_conf}.
+Default is $maim_dir
+"
+
+        exit 2
+esac
+
+exit 0

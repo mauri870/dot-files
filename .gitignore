@@ -1,4 +1,5 @@
 *
+!.gitignore
 !scripts
 !.config/i3
 !.config/neofetch
