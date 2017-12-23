@@ -32,10 +32,10 @@ new_float normal
 
 # Floating terminal
 exec --no-startup-id $term -name dropdown -e tmux
-for_window [instance="dropdown"] floating enable; resize set 1920 600; move position 0 35; move scratchpad
-bindsym F12 [instance="dropdown"] scratchpad show
-bindsym Shift+F12 resize shrink height 10 px or 10 ppt
-bindsym Ctrl+F12 resize grow height 10px or 10 ppt
+for_window [instance="dropdown"] floating enable; move scratchpad; sticky enable
+bindsym F12 [instance="dropdown"] scratchpad show; resize set 1920px 600px; move position 0 35
+bindsym Shift+F12 [instance="dropdown" ] resize shrink height 10 px or 10 ppt
+bindsym Ctrl+F12 [instance="dropdown"] resize grow height 10px or 10 ppt
 
 # Floating terminal running python with numpy for math
 exec --no-startup-id $term -fn "xft:Fira Code:pixelsize=24" -name math -e python -i -c 'import numpy as np'
@@ -196,14 +196,13 @@ assign [class="Slack"] $ws3
 assign [class="^Transmission-gtk$"] $ws4
 
 # Open specific applications in floating mode
-for_window [title="alsamixer"] floating enable border pixel 1
-for_window [class="GParted"] floating enable border normal
-for_window [class="Lxappearance"] floating enable sticky enable border normal
-for_window [class="Nitrogen"] floating enable sticky enable border normal
+for_window [class="GParted"] floating enable; border normal
+for_window [class="Lxappearance"] floating enable; sticky enable; border normal
+for_window [class="Nitrogen"] floating enable; sticky enable; border normal
 for_window [class="Pamac-manager"] floating enable
-for_window [class="Pavucontrol"] floating enable sticky enable
-for_window [class="(?i)System-config-printer.py"] floating enable border normal
-for_window [class="(?i)virtualbox"] floating enable border normal
+for_window [class="Pavucontrol"] floating enable; sticky enable
+for_window [class="(?i)System-config-printer.py"] floating enable; border normal
+for_window [class="(?i)virtualbox"] floating enable; border normal
 
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
