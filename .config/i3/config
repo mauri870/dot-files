@@ -21,11 +21,12 @@ set $dec --no-startup-id pamixer --allow-boost -d 5
 set $mute --no-startup-id pamixer --allow-boost -t
 
 # Extra XF86 keys
-bindsym XF86AudioMute		exec $mute
-bindsym XF86AudioLowerVolume	exec $dec
-bindsym XF86AudioRaiseVolume	exec $inc
-bindsym XF86MonBrightnessDown	exec --no-startup-id xbacklight -dec 50
-bindsym XF86MonBrightnessUp	exec --no-startup-id xbacklight -inc 50
+bindsym XF86AudioMute exec $mute
+bindsym XF86AudioLowerVolume exec $dec
+bindsym XF86AudioRaiseVolume exec $inc
+bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 50
+bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 50
+bindsym XF86Display exec --no-startup-id $HOME/.config/scripts/monitor
 
 new_window pixel 1
 new_float normal
