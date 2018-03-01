@@ -12,12 +12,6 @@ set $wallpaper ~/w.jpg
 exec_always --no-startup-id wal -c -i $wallpaper
 exec_always --no-startup-id ~/.config/neofetch/replace_image.sh $wallpaper 
 
-# Polybar
-exec_always --no-startup-id MONITOR=$monitor $HOME/.config/polybar/launch.sh
-
-# Prevent xautolock to lock the screen if watching a fullscreen video
-exec_always --no-startup-id ~/.config/scripts/lightsOn
-
 # Pulseaudio stuff
 set $inc --no-startup-id pamixer --allow-boost -i 5
 set $dec --no-startup-id pamixer --allow-boost -d 5
@@ -208,6 +202,8 @@ for_window [class="Pamac-manager"] floating enable
 for_window [class="Pavucontrol"] floating enable; sticky enable
 for_window [class="(?i)System-config-printer.py"] floating enable; border normal
 for_window [class="(?i)virtualbox"] floating enable; border normal
+for_window [class="gufw.py"] floating enable; border normal
+for_window [class="peek"] floating enable; border normal
 
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
@@ -274,9 +270,17 @@ exec --no-startup-id caffeine
 exec --no-startup-id blueman-applet
 exec --no-startup-id dropbox start
 exec --no-startup-id nm-applet
+exec --no-startup-id pnmixer
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id pamac-tray
 exec --no-startup-id clipit
+exec --no-startup-id multiload-ng-systray
+
+# Polybar
+exec_always --no-startup-id MONITOR=$monitor $HOME/.config/polybar/launch.sh
+
+# hide/unhide Polybar
+bindsym $mod+m exec ~/.config/polybar/toggle.sh
 
 # Autolock and fixes
 exec --no-startup-id xautolock -time 10 -locker blurlock
@@ -323,9 +327,6 @@ set $i3_color14         #268BD2
 set $i3_color15         #000000
 set $i3_color16         #ffffff
 set $i3_color17         #0c0c0c
-
-# hide/unhide Polybar
-bindsym $mod+m exec ~/.config/polybar/toggle.sh
 
 # Theme colors
 # class                 border      backgr.     text        indic.      child_border
