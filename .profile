@@ -48,7 +48,7 @@ alias maxbacklight='sudo su -c "echo 907 >/sys/class/backlight/intel_backlight/b
 alias con="$EDITOR $HOME/.config/i3/config"
 alias comp="$EDITOR $HOME/.config/compton.conf"
 alias fixit='sudo rm -f /var/lib/pacman/db.lck'
-alias mirrors='sudo pacman-mirrors -g'
+alias mirrors='pacman-mirrors --fasttrack && sudo pacman -Syyu'
 alias printer='system-config-printer'
 alias update='yaourt -Syua'
 alias minikubedeleteall='kubectl delete --all pods --namespace=default; kubectl delete --all deployments --namespace=default; kubectl delete --all services --namespace=default; kubectl delete --all pvc --namespace=default'
