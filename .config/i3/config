@@ -183,6 +183,7 @@ bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
 # Coding
 assign [class="jetbrains-"] $ws2
 assign [class="^Code$"] $ws2
+assign [class="acme"] $ws2
 
 # Browsers
 assign [class="Vivaldi-stable"] $ws1
@@ -193,6 +194,7 @@ assign [class="Slack"] $ws3
 
 # Torrent
 assign [class="^Transmission-gtk$"] $ws4
+assign [class="gnome-pomodoro$"] $ws4
 
 # Open specific applications in floating mode
 for_window [class="GParted"] floating enable; border normal
@@ -201,9 +203,9 @@ for_window [class="Nitrogen"] floating enable; sticky enable; border normal
 for_window [class="Pamac-manager"] floating enable
 for_window [class="Pavucontrol"] floating enable; sticky enable
 for_window [class="(?i)System-config-printer.py"] floating enable; border normal
-for_window [class="(?i)virtualbox"] floating enable; border normal
 for_window [class="gufw.py"] floating enable; border normal
 for_window [class="peek"] floating enable; border normal
+for_window [class="gnome-pomodoro"] floating enable; border normal
 
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
@@ -262,11 +264,13 @@ mode "resize" {
 bindsym $mod+9 exec --no-startup-id blurlock
 
 # Autostart applications
+exec --no-startup-id /usr/lib/geoclue-2.0/demos/agent
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id compton -b
 
 # Autostart systray apps
-exec --no-startup-id caffeine
+exec --no-startup-id redshift-gtk
+exec --no-startup-id caffeine --activate
 exec --no-startup-id blueman-applet
 exec --no-startup-id dropbox start
 exec --no-startup-id nm-applet
