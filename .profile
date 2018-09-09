@@ -22,11 +22,13 @@ export QT_DIR=$HOME/Qt/5.8
 export QT_STUB=false
 export QT_DEBUG=false
 
-# Kubernetes autocompletion
+# Kubernetes and Helm autocompletion
 if [ -n "$ZSH_VERSION" ]; then
    source <(kubectl completion zsh)
+   source <(helm completion zsh)
 elif [ -n "$BASH_VERSION" ]; then
    source <(kubectl completion bash)
+   source <(helm completion bash)
 fi
 
 # Pyenv
@@ -51,6 +53,7 @@ alias fixit='sudo rm -f /var/lib/pacman/db.lck'
 alias mirrors='pacman-mirrors --fasttrack && sudo pacman -Syyu'
 alias printer='system-config-printer'
 alias update='yaourt -Syua'
+alias qemu='qemu-system-x86_64'
 alias minikubedeleteall='kubectl delete --all pods --namespace=default; kubectl delete --all deployments --namespace=default; kubectl delete --all services --namespace=default; kubectl delete --all pvc --namespace=default'
 
 # torch installation
