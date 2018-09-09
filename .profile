@@ -8,6 +8,7 @@ export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
 export PATH="$JAVA_HOME/bin:$PATH"
 export LD_LIBRARY_PATH=/usr/lib:/usr/local/lib:/opt/cuda/lib64:$LD_LIBRARY_PATH
 export PATH=$PATH:/opt/google-cloud-sdk/bin
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 # Golang envs
 export GOPATH=$HOME/gopath
