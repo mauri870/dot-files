@@ -6,7 +6,7 @@ export TERM=rxvt-unicode-256color
 export PATH=$PATH:/usr/local/cuda/bin
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
 export PATH="$JAVA_HOME/bin:$PATH"
-export LD_LIBRARY_PATH=/usr/lib:/usr/local/lib:/opt/cuda/lib64:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=/usr/lib32:/usr/lib:/usr/local/lib:/usr/local/cuda/lib64:$LD_LIBRARY_PATH
 export PATH=$PATH:/opt/google-cloud-sdk/bin
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
@@ -53,7 +53,7 @@ alias comp="$EDITOR $HOME/.config/compton.conf"
 alias fixit='sudo rm -f /var/lib/pacman/db.lck'
 alias mirrors='pacman-mirrors --fasttrack && sudo pacman -Syyu'
 alias printer='system-config-printer'
-alias update='yaourt -Syua'
+alias update='yay -Syu'
 alias qemu='qemu-system-x86_64'
 alias minikubedeleteall='kubectl delete --all pods --namespace=default; kubectl delete --all deployments --namespace=default; kubectl delete --all services --namespace=default; kubectl delete --all pvc --namespace=default'
 
