@@ -8,6 +8,7 @@ alsa-utils
 amd-ucode
 arandr
 artwork-i3
+astah-community
 autoconf
 automake
 avahi
@@ -179,6 +180,7 @@ networkmanager-pptp
 networkmanager-vpnc
 nfs-utils
 nodejs
+npm
 nss-mdns
 ntfs-3g
 ntp
@@ -202,6 +204,7 @@ perl
 perl-file-mimeinfo
 phpstorm
 pkgconf
+plan9port-git
 pnmixer
 polkit-gnome
 polybar-git
@@ -273,6 +276,7 @@ wine-staging
 winetricks
 wmutils
 wpa_supplicant
+wps-office
 xarchiver
 xautolock
 xclip
