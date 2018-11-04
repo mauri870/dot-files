@@ -6,6 +6,10 @@ alsa-firmware
 alsa-plugins
 alsa-utils
 amd-ucode
+android-sdk
+android-sdk-build-tools
+android-sdk-platform-tools
+android-tools
 arandr
 artwork-i3
 astah-community
@@ -15,6 +19,7 @@ avahi
 b43-fwcutter
 bash
 bazel
+bind-tools
 binutils
 bison
 blueman-git
@@ -73,7 +78,10 @@ gksu-polkit
 glibc
 gnome-keyring
 google-chrome-beta
+google-cloud-sdk
+gotop-bin
 gparted
+gradle
 graphviz
 grep
 grub
@@ -132,6 +140,10 @@ linux418
 linux418-bbswitch
 linux418-headers
 linux418-nvidia
+linux419
+linux419-bbswitch
+linux419-headers
+linux419-nvidia
 logrotate
 lsb-release
 lvm2
@@ -219,6 +231,7 @@ python-pip
 python-pywal
 qt5-styleplugins
 qt5ct
+qutebrowser-git
 ranger
 redshift
 reiserfsprogs
@@ -246,6 +259,7 @@ texinfo
 texstudio
 tlp
 tmux
+tor
 tree
 ttf-bitstream-vera
 ttf-dejavu
@@ -302,6 +316,7 @@ xorg-xhost
 xorg-xinit
 xorg-xkill
 xorg-xprop
+xorg-xwininfo
 xterm
 yaourt
 yarn
