@@ -210,7 +210,7 @@ for_window [class="peek"] floating enable; border normal
 for_window [class="gnome-pomodoro"] floating enable; border normal
 
 # switch to workspace with urgent window automatically
-for_window [urgent=latest] focus
+# for_window [urgent=latest] focus
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
