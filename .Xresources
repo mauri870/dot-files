@@ -40,7 +40,8 @@ URxvt.url-launcher:     vivaldi-stable
 URxvt.matcher.button:	1
 URxvt.resize-font.smaller:	C-Down
 URxvt.resize-font.bigger:	C-Up
-
+URxvt.iso14755: true
+URxvt.iso14755_52: false
 URxvt.colorUL:		#4682B4
 rofi.color-enabled:	true
 rofi.color-window:	#000, #000, #000
