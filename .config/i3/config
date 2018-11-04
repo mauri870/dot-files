@@ -9,7 +9,7 @@ set $term urxvt
 
 # Wallpaper
 set $wallpaper ~/w.jpg
-exec_always --no-startup-id wal -c -i $wallpaper
+exec_always --no-startup-id wal -i $wallpaper
 exec_always --no-startup-id ~/.config/neofetch/replace_image.sh $wallpaper 
 
 # Pulseaudio stuff
@@ -76,6 +76,7 @@ bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 bindsym $mod+c exec zenity --calendar
 
 focus_follows_mouse no
+focus_on_window_activation none
 
 # change focus
 bindsym $mod+j focus left
