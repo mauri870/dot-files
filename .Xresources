@@ -32,7 +32,7 @@
 URxvt.intensityStyles:	false
 !!URxvt.background:       [70]#000000
 URxvt.depth:		32
-URxvt.font: 		xft:FiraCode:size=12
+URxvt.font: 		xft:FiraCode:size=12, xft:DejaVu Sans:size=18
 URxvt.scrollBar:	false
 URxvt.cursorColor:	white
 URxvt.perl-ext-common:	default,matcher,resize-font,selection-to-clipboard
@@ -43,6 +43,11 @@ URxvt.resize-font.bigger:	C-Up
 URxvt.iso14755: true
 URxvt.iso14755_52: false
 URxvt.colorUL:		#4682B4
+
+UXTerm*faceName:    FiraCode
+UXTerm*faceSize:    12
+UXTerm*renderFont:  true
+
 rofi.color-enabled:	true
 rofi.color-window:	#000, #000, #000
 rofi.color-normal:	#111, #819396, #222, #008ed4, #ffffff
