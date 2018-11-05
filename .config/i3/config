@@ -30,15 +30,15 @@ new_float normal
 
 # Floating terminal
 exec --no-startup-id $term -name dropdown -e tmux
-for_window [instance="dropdown"] floating enable; move scratchpad; sticky enable
-bindsym F12 [instance="dropdown"] scratchpad show; resize set 1920px 600px; move position 0 35
+for_window [instance="dropdown"] floating enable; resize set 1920 600; move position 0 35; sticky enable; move scratchpad
+bindsym F12 [instance="dropdown"] scratchpad show
 bindsym Shift+F12 [instance="dropdown" ] resize shrink height 10 px or 10 ppt
 bindsym Ctrl+F12 [instance="dropdown"] resize grow height 10px or 10 ppt
 
 # Floating terminal running python with numpy for math
 exec --no-startup-id $term -fn "xft:Fira Code:pixelsize=24" -name math -e python -i -c 'import numpy as np'
 for_window [instance="math"] floating enable; resize set 800 600; move scratchpad
-bindsym $mod+a [instance="math"] scratchpad show; move position center
+bindsym $mod+a [instance="math"] scratchpad show
 
 # change borders
 bindsym $mod+u border none
