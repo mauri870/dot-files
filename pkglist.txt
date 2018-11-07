@@ -62,7 +62,7 @@ ffmpegthumbnailer
 file
 filesystem
 findutils
-firefox
+firefox-nightly
 flac
 flex
 franz-bin
@@ -221,6 +221,7 @@ pnmixer
 polkit-gnome
 polybar-git
 poppler-data
+powerline-fonts
 powertop
 procps-ng
 psmisc
@@ -270,6 +271,7 @@ ttf-inconsolata
 ttf-indic-otf
 ttf-liberation
 upower
+urxvt-resize-font-git
 usbutils
 util-linux
 vertex-maia-themes
@@ -321,4 +323,5 @@ xterm
 yaourt
 yarn
 yay
+zeal
 zsh
