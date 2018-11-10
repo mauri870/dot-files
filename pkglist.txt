@@ -77,6 +77,7 @@ git
 gksu-polkit
 glibc
 gnome-keyring
+gnu-netcat
 google-chrome-beta
 google-cloud-sdk
 gotop-bin
@@ -244,6 +245,7 @@ sbxkb
 screenfetch
 sed
 shadow
+sipsak-git
 slack-desktop
 sox
 spectre-meltdown-checker
@@ -288,6 +290,7 @@ volumeicon
 w3m
 wget
 which
+whois
 wine-staging
 winetricks
 wmutils
