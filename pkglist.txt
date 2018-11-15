@@ -38,6 +38,7 @@ cronie
 cryptsetup
 deluge
 device-mapper
+devtools
 dfc
 dhclient
 dhcpcd
@@ -77,7 +78,6 @@ git
 gksu-polkit
 glibc
 gnome-keyring
-gnu-netcat
 google-chrome-beta
 google-cloud-sdk
 gotop-bin
@@ -124,6 +124,8 @@ less
 lib32-flex
 lib32-mesa-demos
 lib32-nvidia-utils
+lib32-openal
+lib32-pangox-compat
 lib32-primus
 lib32-virtualgl
 libdvdcss
@@ -192,6 +194,7 @@ networkmanager-openvpn
 networkmanager-pptp
 networkmanager-vpnc
 nfs-utils
+nmap
 nodejs
 npm
 nss-mdns
@@ -200,6 +203,7 @@ ntp
 nvidia-utils
 nvtop
 open-fuse-iso
+openbsd-netcat
 openresolv
 openssh
 os-prober
@@ -247,6 +251,7 @@ sed
 shadow
 sipsak-git
 slack-desktop
+sngrep
 sox
 spectre-meltdown-checker
 speedtest-cli
