@@ -36,7 +36,7 @@ URxvt.font: 		xft:FiraCode:size=12, xft:DejaVu Sans:size=18
 URxvt.scrollBar:	false
 URxvt.cursorColor:	white
 URxvt.perl-ext-common:	default,matcher,resize-font,selection-to-clipboard
-URxvt.url-launcher:     vivaldi-stable
+URxvt.url-launcher:     qutebrowser
 URxvt.matcher.button:	1
 URxvt.resize-font.smaller:	C-Down
 URxvt.resize-font.bigger:	C-Up

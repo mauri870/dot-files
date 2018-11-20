@@ -101,6 +101,7 @@ gvfs-afc
 gvfs-gphoto2
 gvfs-mtp
 gvfs-smb
+gvim
 gzip
 haveged
 htop
@@ -210,6 +211,7 @@ os-prober
 p7zip
 pacman
 pamac
+pandoc
 parallel
 patch
 patchutils
@@ -264,6 +266,7 @@ tar
 task
 terminus-font
 texinfo
+texlive-core
 texstudio
 tlp
 tmux
@@ -285,7 +288,6 @@ vertex-maia-themes
 vi
 vibrancy-icons-teal
 viewnior
-vim
 virtualgl
 visual-studio-code-bin
 vivaldi
