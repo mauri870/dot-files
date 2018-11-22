@@ -188,6 +188,7 @@ assign [class="acme"] $ws2
 # Browsers
 assign [class="Vivaldi-stable"] $ws1
 assign [class="^google-chrome$"] $ws1
+assign [class="qutebrowser"] $ws1
 
 # Apps
 assign [class="Slack"] $ws3
