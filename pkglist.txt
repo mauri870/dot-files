@@ -18,6 +18,7 @@ automake
 avahi
 b43-fwcutter
 bash
+bash-bats
 bazel
 bind-tools
 binutils
@@ -67,7 +68,6 @@ findutils
 firefox-nightly
 flac
 flex
-franz-bin
 gawk
 gcc
 gcc-libs
@@ -106,6 +106,7 @@ gvim
 gzip
 haveged
 htop
+hugo
 inetutils
 intel-ucode
 inxi
@@ -218,6 +219,7 @@ patchutils
 pavucontrol
 pciutils
 pcmanfm
+pdfjs
 peek
 perl
 perl-file-mimeinfo
@@ -268,6 +270,7 @@ terminus-font
 texinfo
 texlive-core
 texstudio
+time
 tlp
 tmux
 tor
@@ -332,6 +335,7 @@ xorg-xwininfo
 xterm
 yaourt
 yarn
+yasm
 yay
 zeal
 zsh
