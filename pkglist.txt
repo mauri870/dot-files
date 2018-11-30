@@ -176,6 +176,7 @@ mdadm
 memtest86+
 mesa-demos
 mhwd
+mhwd-chroot
 mhwd-db
 mhwd-i2c-syna3602
 mkinitcpio-openswap
@@ -186,6 +187,7 @@ modemmanager
 morc_menu
 mousepad
 multiload-ng-systray-gtk3
+mupdf
 nano
 ncdu
 neofetch
