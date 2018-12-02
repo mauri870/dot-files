@@ -4,6 +4,7 @@ export BROWSER=qutebrowser
 export EDITOR=vim
 export TERM=rxvt-unicode-256color
 export PATH=$PATH:/usr/local/cuda/bin
+export PATH=$PATH:~/.config/scripts
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
 export PATH="$JAVA_HOME/bin:$PATH"
 export LD_LIBRARY_PATH=/usr/lib32:/usr/lib:/usr/local/lib:/usr/local/cuda/lib64:$LD_LIBRARY_PATH
@@ -12,7 +13,7 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 # Golang envs
 export GOPATH=$HOME/gopath
-export GOROOT=/usr/local/go
+export GOROOT=/usr/lib/go
 export PATH=$PATH:$GOROOT/bin
 export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOBIN

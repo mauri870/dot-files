@@ -2,7 +2,7 @@
 set $mod Mod4
 
 # Default monitor
-set $monitor eDP1
+set $monitor eDP-1
 
 # Terminal
 set $term urxvt
@@ -267,7 +267,6 @@ bindsym $mod+9 exec --no-startup-id blurlock
 
 # Autostart applications
 exec --no-startup-id /usr/lib/geoclue-2.0/demos/agent
-exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id compton -b
 
 # Autostart systray apps
@@ -280,7 +279,7 @@ exec --no-startup-id pnmixer
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id pamac-tray
 exec --no-startup-id clipit
-exec --no-startup-id multiload-ng-systray
+# exec --no-startup-id multiload-ng-systray
 
 # Polybar
 exec_always --no-startup-id MONITOR=$monitor $HOME/.config/polybar/launch.sh
@@ -290,7 +289,6 @@ bindsym $mod+m exec ~/.config/polybar/toggle.sh
 
 # Autolock and fixes
 exec --no-startup-id xautolock -time 10 -locker blurlock
-exec_always --no-startup-id fix_xcursor
 
 # Color palette used for the terminal
 set_from_resource $term_background background
