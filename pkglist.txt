@@ -11,6 +11,7 @@ android-sdk-build-tools
 android-sdk-platform-tools
 android-tools
 arandr
+arch-silence-grub-theme
 astah-community
 autoconf
 automake
@@ -212,10 +213,9 @@ python-pip
 python-pywal
 qt5-styleplugins
 qt5ct
-qutebrowser
+qutebrowser-git
 ranger
 redshift
-refind-efi
 reiserfsprogs
 rofi
 rsync
@@ -241,6 +241,7 @@ task
 terminus-font
 texinfo
 texlive-core
+texlive-latexextra
 texstudio
 time
 tlp
