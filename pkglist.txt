@@ -224,6 +224,7 @@ rxvt-unicode-patched
 s-nail
 sbxkb
 screenfetch
+scrot
 sed
 shadow
 sipsak-git
