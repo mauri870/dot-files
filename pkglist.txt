@@ -23,7 +23,7 @@ bbswitch
 bind-tools
 binutils
 bison
-blueman
+blueman-git
 bluez-utils
 btrfs-progs
 bzip2
@@ -183,6 +183,7 @@ os-prober
 p7zip
 pacman
 pamac-aur
+pamixer
 pandoc
 papirus-icon-theme-git
 parallel
