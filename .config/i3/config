@@ -335,7 +335,7 @@ set $i3_color17         #0c0c0c
 
 # Theme colors
 # class                 border      backgr.     text        indic.      child_border
-client.focused          $i3_color8  $i3_color8  $i3_color11 $i3_color12
+client.focused          $i3_color5  $i3_color8  $i3_color11 $i3_color12
 client.focused_inactive $i3_color9  $i3_color9  $i3_color4  $i3_color10
 client.unfocused        $i3_color9  $i3_color9  $i3_color4  $i3_color10
 client.urgent           $i3_color13 $i3_color12 $i3_color4  $i3_color14
@@ -351,9 +351,9 @@ client.background       $i3_background
 gaps inner 12
 gaps outer -4
 
-smart_gaps on
+# smart_gaps on
 
-smart_borders on
+#smart_borders on
 
 # Press $mod+Shift+g to enter the gap mode. Choose o or i for modifying outer/inner gaps. Press one of + / - (in-/decrement for current workspace) or 0 (remove gaps for current workspace). If you also press Shift with these keys, the change will be global for all workspaces.
 set $mode_gaps Gaps: (o) outer, (i) inner
