@@ -1,6 +1,7 @@
 accountsservice
 acpi
 acpid
+acpilight-git
 adapta-gtk-theme
 alsa-firmware
 alsa-plugins
@@ -75,6 +76,7 @@ gconf
 gettext
 gimp
 git
+gitflow-avh
 gksu
 glibc
 gnome-keyring
@@ -220,6 +222,7 @@ redshift
 reiserfsprogs
 rofi
 rsync
+rustup
 rxvt-unicode-patched
 s-nail
 sbxkb
