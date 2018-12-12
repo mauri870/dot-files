@@ -56,7 +56,7 @@ alias mirrors='pacman-mirrors --fasttrack && sudo pacman -Syyu'
 alias printer='system-config-printer'
 alias update='yay -Syu'
 alias qemu='qemu-system-x86_64'
-alias minikubedeleteall='kubectl delete --all pods --namespace=default; kubectl delete --all deployments --namespace=default; kubectl delete --all services --namespace=default; kubectl delete --all pvc --namespace=default'
+alias screencast='ffscreencast -c1 -a1 --oargs="-c:a flac" --cargs="-video_size 320x180"'
 
 # torch installation
 . /home/mauri870/torch/install/bin/torch-activate
