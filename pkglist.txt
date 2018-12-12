@@ -63,6 +63,7 @@ f2fs-tools
 fakeroot
 ffmpeg
 ffmpegthumbnailer
+ffscreencast
 file
 filesystem
 findutils
@@ -202,7 +203,7 @@ phpstorm
 pkgconf
 pnmixer-git
 polkit-gnome
-polybar
+polybar-git
 poppler-data
 powerline-fonts
 powertop
@@ -252,6 +253,7 @@ time
 tlp
 tmux
 tor
+transmission-gtk
 tree
 ttf-bitstream-vera
 ttf-dejavu
@@ -287,6 +289,7 @@ xcursor-breeze
 xdg-su
 xdg-user-dirs
 xdg-utils
+xdo
 xdotool
 xf86-input-elographics
 xf86-input-evdev
