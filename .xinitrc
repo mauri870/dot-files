@@ -6,4 +6,4 @@ if [ -f "$xresources" ]; then
     xrdb -merge "$xresources"
 fi
 
-exec i3 --shmlog-size 0
+exec dbus-launch i3 --shmlog-size 0
