@@ -62,7 +62,7 @@ bindsym $mod+Ctrl+m exec --no-startup-id pavucontrol
 bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
 bindsym $mod+F2 exec $(echo $BROWSER)
 bindsym $mod+F3 exec pcmanfm
-bindsym $mod+F4 exec $term -e ranger
+bindsym $mod+F4 exec $term -e nnn
 bindsym $mod+Shift+F3 exec gksu pcmanfm
 bindsym $mod+F5 exec $term -e 'mocp'
 bindsym $mod+t exec --no-startup-id pkill compton
