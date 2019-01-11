@@ -30,6 +30,7 @@ btrfs-progs
 bzip2
 caffeine-ng
 clipit
+cmatrix
 compton
 coreutils
 cpupower
@@ -69,6 +70,7 @@ filesystem
 findutils
 firefox-nightly
 flex
+fortune-mod
 gawk
 gcc
 gcc-libs
@@ -153,10 +155,14 @@ man-pages
 mdadm
 memtest86+
 mesa-demos
+mingw-w64-binutils
+mingw-w64-gcc-bin
+mingw-w64-headers
 mlocate
 mobile-broadband-provider-info
 moc
 modemmanager
+moonlight-qt
 mousepad
 mtools
 mupdf
@@ -173,6 +179,7 @@ networkmanager-vpnc
 nfs-utils
 nitrogen
 nmap
+nnn
 nodejs
 npm
 nss-mdns
@@ -218,7 +225,6 @@ python-pywal
 qt5-styleplugins
 qt5ct
 qutebrowser-git
-ranger
 redshift
 reiserfsprogs
 rofi
@@ -250,6 +256,7 @@ texlive-core
 texlive-latexextra
 texstudio
 time
+tk
 tlp
 tmux
 tor
