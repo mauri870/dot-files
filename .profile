@@ -45,6 +45,8 @@ alias ta='task add'
 alias td='task done'
 
 # general aliases
+alias ls="exa"
+alias ll="exa -l"
 alias cb="sed -r \"s/\x1B\[([0-9]{1,2}(;[0-9]{1,2})?)?[m|K]//g\" | xclip -selection clipboard"
 alias weather='curl -s wttr.in | sed -n "1,7p"'
 alias minbacklight='sudo su -c "echo 1 >/sys/class/backlight/intel_backlight/brightness"'

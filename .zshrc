@@ -91,3 +91,5 @@ if [[ -r /usr/share/powerline/bindings/zsh/powerline.zsh ]]; then
 fi
 
 source ~/.profile
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

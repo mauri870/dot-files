@@ -3,6 +3,7 @@ acpi
 acpid
 acpilight-git
 adapta-gtk-theme
+alacritty
 alsa-firmware
 alsa-plugins
 alsa-utils
@@ -24,6 +25,7 @@ bbswitch
 bind-tools
 binutils
 bison
+blender
 blueman-git
 bluez-utils
 btrfs-progs
@@ -59,9 +61,11 @@ efibootmgr
 entr
 epdfview
 espeak
+exa
 exfat-utils
 f2fs-tools
 fakeroot
+fann
 ffmpeg
 ffmpegthumbnailer
 ffscreencast
@@ -169,6 +173,7 @@ mupdf
 nano
 ncdu
 neofetch
+neovim
 netctl
 network-manager-applet
 networkmanager
@@ -227,6 +232,7 @@ qt5ct
 qutebrowser-git
 redshift
 reiserfsprogs
+ripgrep
 rofi
 rsync
 rustup
@@ -283,6 +289,7 @@ vivaldi-ffmpeg-codecs
 vlc
 volumeicon
 w3m
+wasm-gc
 wget
 which
 whois
