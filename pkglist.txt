@@ -31,6 +31,7 @@ bluez-utils
 btrfs-progs
 bzip2
 caffeine-ng
+cheese
 clipit
 cmatrix
 compton
@@ -39,6 +40,8 @@ cpupower
 crda
 cronie
 cryptsetup
+cuda
+cudnn
 deluge
 device-mapper
 devtools
@@ -77,7 +80,9 @@ flex
 fortune-mod
 gawk
 gcc
+gcc-arm-none-eabi-bin
 gcc-libs
+gcc5
 gcolor2
 gconf
 gettext
@@ -162,6 +167,7 @@ mesa-demos
 mingw-w64-binutils
 mingw-w64-gcc-bin
 mingw-w64-headers
+minikube
 mlocate
 mobile-broadband-provider-info
 moc
@@ -227,6 +233,7 @@ pv
 pygtk
 python-pip
 python-pywal
+qemu
 qt5-styleplugins
 qt5ct
 qutebrowser-git
@@ -280,8 +287,10 @@ upower
 urxvt-resize-font-git
 usbutils
 util-linux
+valgrind
 vi
 viewnior
+virtualbox
 virtualgl
 visual-studio-code-bin
 vivaldi
@@ -296,6 +305,7 @@ whois
 wine-staging
 winetricks
 wps-office
+wrk
 xarchiver
 xautolock
 xclip
