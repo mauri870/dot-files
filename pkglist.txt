@@ -243,7 +243,6 @@ ripgrep
 rofi
 rsync
 rustup
-rxvt-unicode-patched
 s-nail
 sbxkb
 screenfetch
@@ -284,7 +283,6 @@ ttf-inconsolata
 ttf-indic-otf
 ttf-liberation
 upower
-urxvt-resize-font-git
 usbutils
 util-linux
 valgrind
