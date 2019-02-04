@@ -49,6 +49,7 @@ dfc
 dhclient
 dhcpcd
 dialog
+diff-so-fancy
 diffutils
 dmidecode
 dmraid
@@ -176,7 +177,6 @@ moonlight-qt
 mousepad
 mtools
 mupdf
-nano
 ncdu
 neofetch
 neovim
