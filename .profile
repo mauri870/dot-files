@@ -4,10 +4,11 @@ export BROWSER=qutebrowser
 export EDITOR=vim
 export TERM=rxvt-unicode-256color
 export PATH=$PATH:/usr/local/cuda/bin
+export PATH=$PATH:/opt/cuda/bin
 export PATH=$PATH:~/.config/scripts
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
 export PATH="$JAVA_HOME/bin:$PATH"
-export LD_LIBRARY_PATH=/usr/lib32:/usr/lib:/usr/local/lib:/usr/local/cuda/lib64:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=/usr/lib32:/usr/lib:/usr/local/lib:/opt/cuda/lib64:/usr/local/cuda/lib64:$LD_LIBRARY_PATH
 export PATH=$PATH:/opt/google-cloud-sdk/bin
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
@@ -59,6 +60,8 @@ alias printer='system-config-printer'
 alias update='yay -Syu'
 alias qemu='qemu-system-x86_64'
 alias screencast='ffscreencast -c1 -a1 --oargs="-c:a flac" --cargs="-video_size 320x180"'
+
+set -o vi
 
 # torch installation
 . /home/mauri870/torch/install/bin/torch-activate
