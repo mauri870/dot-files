@@ -1,8 +1,10 @@
+# Vi like editing
+set -o vi
+
 # Commands starting with space won't be included in the history
 export HISTCONTROL=ignorespace
 
 # General envs
-# export YAOURT_COLORS="nb=1:pkg=1:ver=1;32:lver=1;45:installed=1;42:grp=1;34:od=1;41;5:votes=1;44:dsc=0:other=1;35"
 export BROWSER=qutebrowser
 export EDITOR=nvim
 export PATH=$PATH:/usr/local/cuda/bin
@@ -20,12 +22,6 @@ export GOROOT=/usr/lib/go
 export PATH=$PATH:$GOROOT/bin
 export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOBIN
-
-# Qt envs
-export QT_VERSION=5.8.0
-export QT_DIR=$HOME/Qt/5.8
-export QT_STUB=false
-export QT_DEBUG=false
 
 # Kubernetes and Helm autocompletion
 if [ -n "$ZSH_VERSION" ]; then
@@ -62,9 +58,6 @@ alias printer='system-config-printer'
 alias update='yay -Syu'
 alias qemu='qemu-system-x86_64'
 alias screencast='ffscreencast -c1 -a1 --oargs="-c:a flac" --cargs="-video_size 320x180"'
-
-# Vi like editing
-set -o vi
 
 # torch installation
 . /home/mauri870/torch/install/bin/torch-activate
