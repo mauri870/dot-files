@@ -237,7 +237,7 @@ python-pywal
 qemu
 qt5-styleplugins
 qt5ct
-qutebrowser-git
+qutebrowser
 redshift
 reiserfsprogs
 ripgrep
