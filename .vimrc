@@ -1,6 +1,9 @@
 " Plug init
 call plug#begin('~/.vim/plugged')
 
+" Editorconfig support
+Plug 'editorconfig/editorconfig-vim'
+
 " Autocompletion
 Plug 'Valloric/YouCompleteMe'
 
