@@ -61,3 +61,9 @@ map <C-p> :Files<CR>
 
 " Open ripgrep menu
 map <C-o> :Rg<CR>
+
+" Open Buffers
+nmap <C-e> :Buffers<CR>
+
+" Toggles between buffers
+nnoremap <C-Space> <C-^>
