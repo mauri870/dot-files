@@ -67,3 +67,6 @@ nmap <C-e> :Buffers<CR>
 
 " Toggles between buffers
 nnoremap <C-Space> <C-^>
+
+" Clear last search pattern
+nnoremap <CR> :noh<CR><CR>
