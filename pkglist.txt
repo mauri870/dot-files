@@ -146,8 +146,6 @@ libdvdcss
 libgpod
 libtool
 licenses
-lightdm
-lightdm-gtk-greeter
 linux
 linux-firmware
 linux-headers
