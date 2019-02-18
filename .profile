@@ -1,6 +1,9 @@
 # Vi like editing
 set -o vi
 
+# I'm lazy to type a n every time...
+alias vim="nvim"
+
 # Commands starting with space won't be included in the history
 export HISTCONTROL=ignorespace
 
