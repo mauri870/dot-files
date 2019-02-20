@@ -1,7 +1,7 @@
 # Vi like editing
 set -o vi
 
-# I'm lazy to type a n every time...
+# I'm lazy to type n every time...
 alias vim="nvim"
 
 # Commands starting with space won't be included in the history
@@ -51,8 +51,6 @@ alias ls="exa"
 alias ll="exa -l"
 alias cb="sed -r \"s/\x1B\[([0-9]{1,2}(;[0-9]{1,2})?)?[m|K]//g\" | xclip -selection clipboard"
 alias weather='curl -s wttr.in | sed -n "1,7p"'
-alias minbacklight='sudo su -c "echo 1 >/sys/class/backlight/intel_backlight/brightness"'
-alias maxbacklight='sudo su -c "echo 907 >/sys/class/backlight/intel_backlight/brightness"'
 alias con="$EDITOR $HOME/.config/i3/config"
 alias comp="$EDITOR $HOME/.config/compton.conf"
 alias fixit='sudo rm -f /var/lib/pacman/db.lck'
