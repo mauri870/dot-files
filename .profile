@@ -15,7 +15,7 @@ export PATH=$PATH:/opt/cuda/bin
 export PATH=$PATH:~/.config/scripts
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
 export PATH="$JAVA_HOME/bin:$PATH"
-export LD_LIBRARY_PATH=/usr/lib32:/usr/lib:/usr/local/lib:/opt/cuda/lib64:/usr/local/cuda/lib64:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=/usr/lib32:/usr/lib:/usr/local/lib:/usr/local/cuda/lib64:/usr/lib/cuda/extras/CUPTI/lib64:$LD_LIBRARY_PATH
 export PATH=$PATH:/opt/google-cloud-sdk/bin
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
@@ -54,7 +54,7 @@ alias weather='curl -s wttr.in | sed -n "1,7p"'
 alias con="$EDITOR $HOME/.config/i3/config"
 alias comp="$EDITOR $HOME/.config/compton.conf"
 alias fixit='sudo rm -f /var/lib/pacman/db.lck'
-alias mirrors='pacman-mirrors --fasttrack && sudo pacman -Syyu'
+alias mirrors='rankmirrors -n 6 /etc/pacman.d/mirrorlist'
 alias printer='system-config-printer'
 alias update='yay -Syu'
 alias qemu='qemu-system-x86_64'
