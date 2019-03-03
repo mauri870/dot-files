@@ -33,6 +33,7 @@ bzip2
 caffeine-ng
 cheese
 clipit
+cloc
 cmatrix
 compton
 coreutils
@@ -89,6 +90,7 @@ gconf
 gettext
 gimp
 git
+git-lfs
 gitflow-avh
 gksu
 glibc
@@ -179,6 +181,7 @@ mupdf
 ncdu
 neofetch
 neovim
+net-tools
 netctl
 network-manager-applet
 networkmanager
@@ -303,6 +306,7 @@ wine-staging
 winetricks
 wps-office
 wrk
+x11vnc
 xarchiver
 xautolock
 xclip
