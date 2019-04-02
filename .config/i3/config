@@ -199,6 +199,7 @@ for_window [class="Lxappearance"] floating enable; sticky enable; border normal
 for_window [class="Nitrogen"] floating enable; sticky enable; border normal
 for_window [class="Pamac-manager"] floating enable
 for_window [class="Pavucontrol"] floating enable; sticky enable
+for_window [class="Gnome-calculator"] floating enable; sticky enable
 for_window [class="(?i)System-config-printer.py"] floating enable; border normal
 for_window [class="gufw.py"] floating enable; border normal
 for_window [class="peek"] floating enable; border normal
