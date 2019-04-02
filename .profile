@@ -42,6 +42,7 @@ eval "$(pyenv virtualenv-init -)"
 
 # taskwarrior aliases
 alias tm='task modify'
+alias te='task edit'
 alias tl='task list'
 alias ta='task add'
 alias td='task done'
