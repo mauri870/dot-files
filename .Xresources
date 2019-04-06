@@ -33,7 +33,7 @@ Xcursor.theme: Breeze
 URxvt.intensityStyles:	false
 URxvt.background:       [90]#000000
 URxvt.depth:		32
-URxvt.font: 		xft:FiraCode:size=12, xft:DejaVu Sans:size=18
+URxvt.font: 		xft:FiraCode:size=14, xft:DejaVu Sans:size=18
 URxvt.scrollBar:	false
 URxvt.cursorColor:	white
 URxvt.perl-ext-common:	default,matcher,resize-font,selection-to-clipboard
@@ -45,8 +45,11 @@ URxvt.iso14755: true
 URxvt.iso14755_52: false
 URxvt.colorUL:		#4682B4
 
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+
 UXTerm*faceName:    FiraCode
-UXTerm*faceSize:    12
+UXTerm*faceSize:    14
 UXTerm*renderFont:  true
 
 rofi.color-enabled:	true
