@@ -15,6 +15,7 @@ android-tools
 arandr
 arch-silence-grub-theme
 astah-community
+asterisk
 autoconf
 automake
 b43-fwcutter
@@ -94,6 +95,7 @@ git-lfs
 gitflow-avh
 gksu
 glibc
+gnome-calculator
 gnome-keyring
 google-chrome-beta
 google-cloud-sdk
@@ -123,6 +125,7 @@ htop
 hugo
 i3-gaps
 i3lock
+imake
 inetutils
 intel-ucode
 inxi
@@ -146,6 +149,7 @@ lib32-virtualgl
 libappindicator-gtk3
 libdvdcss
 libgpod
+libjson
 libtool
 licenses
 linux
@@ -245,6 +249,7 @@ ripgrep
 rofi
 rsync
 rustup
+rxvt-unicode-patched
 s-nail
 sbxkb
 screenfetch
@@ -256,11 +261,13 @@ slack-desktop
 sngrep
 sox
 speedtest-cli
+strace
 subversion
 sudo
 sysfsutils
 syslog-ng
 systemd
+systemd-numlockontty
 systemd-sysvcompat
 tar
 task
@@ -285,6 +292,7 @@ ttf-inconsolata
 ttf-indic-otf
 ttf-liberation
 upower
+urxvt-resize-font-git
 usbutils
 util-linux
 valgrind
@@ -310,7 +318,9 @@ x11vnc
 xarchiver
 xautolock
 xclip
+xcursor-arch-cursor-complete
 xcursor-breeze
+xdemineur
 xdg-su
 xdg-user-dirs
 xdg-utils
