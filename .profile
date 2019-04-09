@@ -10,6 +10,7 @@ export HISTCONTROL=ignorespace
 # General envs
 export BROWSER=qutebrowser
 export EDITOR=nvim
+export TERM=rxvt
 export PATH=$PATH:/usr/local/cuda/bin
 export PATH=$PATH:/opt/cuda/bin
 export PATH=$PATH:~/.config/scripts
