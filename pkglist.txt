@@ -3,7 +3,6 @@ acpi
 acpid
 acpilight-git
 adapta-gtk-theme
-alacritty
 alsa-firmware
 alsa-plugins
 alsa-utils
@@ -226,6 +225,7 @@ perl
 perl-file-mimeinfo
 phpstorm
 pkgconf
+plan9port
 pnmixer-git
 polkit-gnome
 polybar-git
@@ -272,6 +272,7 @@ systemd-numlockontty
 systemd-sysvcompat
 tar
 task
+tensorflow-opt
 terminus-font
 texinfo
 texlive-core
