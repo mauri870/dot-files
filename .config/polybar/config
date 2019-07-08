@@ -11,7 +11,7 @@
 background = ${xrdb:color0:#222}
 background-alt = #444
 foreground = #dfdfdf
-foreground-alt = ${xrdb:color7:#444}
+foreground-alt = #ffffff
 primary = ${colors.foreground-alt}
 secondary = #e60053
 alert = #bd2c40
@@ -97,7 +97,8 @@ pin-workspaces = true
 ws-icon-0 = 1;
 ws-icon-1 = 2;
 ws-icon-2 = 3;
-ws-icon-3 = 4;
+ws-icon-3 = 4;
+ws-icon-4 = 5;
 ws-icon-default = 
 
 label-mode-padding = 2
