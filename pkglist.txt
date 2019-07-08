@@ -9,7 +9,6 @@ alsa-utils
 amd-ucode
 android-sdk
 android-sdk-build-tools
-android-sdk-platform-tools
 android-tools
 arandr
 arch-silence-grub-theme
@@ -20,7 +19,6 @@ automake
 b43-fwcutter
 bash
 bash-bats
-bazel
 bbswitch
 bind-tools
 binutils
@@ -41,8 +39,6 @@ cpupower
 crda
 cronie
 cryptsetup
-cuda
-cudnn
 deluge
 device-mapper
 devtools
@@ -52,6 +48,7 @@ dhcpcd
 dialog
 diff-so-fancy
 diffutils
+dmenu
 dmidecode
 dmraid
 dnsmasq
@@ -88,6 +85,7 @@ gcc5
 gcolor2
 gconf
 gettext
+gifcurry
 gimp
 git
 git-lfs
@@ -96,6 +94,7 @@ gksu
 glibc
 gnome-calculator
 gnome-keyring
+gnome-shell-pomodoro
 google-chrome-beta
 google-cloud-sdk
 gotop-bin
@@ -158,6 +157,7 @@ linux-lts
 linux-lts-headers
 logrotate
 lsb-release
+lshw
 lvm2
 lxappearance
 lxinput
@@ -203,6 +203,7 @@ ntfs-3g
 ntp
 numlockx
 nvidia
+nvidia-docker
 nvidia-settings
 openbsd-netcat
 openssh
@@ -241,9 +242,10 @@ pygtk
 python-pip
 python-pywal
 qemu
+qemu-arch-extra
 qt5-styleplugins
 qt5ct
-qutebrowser
+qutebrowser-git
 redshift
 reiserfsprogs
 ripgrep
@@ -254,13 +256,13 @@ rxvt-unicode-patched
 s-nail
 sbxkb
 screenfetch
+screenkey
 scrot
 sed
 shadow
 sipsak-git
 slack-desktop
 sngrep
-sox
 speedtest-cli
 strace
 subversion
@@ -281,6 +283,7 @@ texstudio
 time
 tk
 tlp
+tmatrix-git
 tmux
 tor
 transmission-gtk
