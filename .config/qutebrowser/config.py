@@ -22,6 +22,15 @@ config.set('content.javascript.enabled', True, 'chrome://*/*')
 # Type: Bool
 config.set('content.javascript.enabled', True, 'qute://*/*')
 
+# Editor (and arguments) to use for the `open-editor` command. The
+# following placeholders are defined: * `{file}`: Filename of the file
+# to be edited. * `{line}`: Line in which the caret is found in the
+# text. * `{column}`: Column in which the caret is found in the text. *
+# `{line0}`: Same as `{line}`, but starting from index 0. * `{column0}`:
+# Same as `{column}`, but starting from index 0.
+# Type: ShellCommand
+c.editor.command = ['urxvt', '-e', 'vim', '-f', '{file}', '-c', 'normal {line}G{column0}l']
+
 # Open new tabs (middleclick/ctrl+click) in the background.
 # Type: Bool
 c.tabs.background = True
@@ -35,5 +44,4 @@ c.tabs.background = True
 # used by prepending the search engine name to the search term, e.g.
 # `:open google qutebrowser`.
 # Type: Dict
-c.url.searchengines = {'DEFAULT': 'https://duckduckgo.com/?q={}', 'trans': 'https://translate.google.com/#auto/en/{}', 'so': 'https://stackoverflow.com/search?q={}', 'gh': 'https://github.com/search?q={}&type=Everything', 'r': 'https://reddit.com/r/{}', '4': 'https://4chan.org/{}', 'aw': 'https://wiki.archlinux.org?search={}', 'aur': 'https://aur.archlinux.org/packages/{}', 'tpb': 'https://thepiratebay.org/search/{}', 'godoc':
-        'https://godoc.org/{}', 'drs': 'https://docs.rs/{}', 'rs': 'https://doc.rust-lang.org/{}'}
+c.url.searchengines = {'DEFAULT': 'https://duckduckgo.com/?q={}', 'trans': 'https://translate.google.com/#auto/en/{}', 'so': 'https://stackoverflow.com/search?q={}', 'gh': 'https://github.com/search?q={}&type=Everything', 'r': 'https://reddit.com/r/{}', '4': 'https://4chan.org/{}', 'aw': 'https://wiki.archlinux.org?search={}', 'aur': 'https://aur.archlinux.org/packages/{}', 'tpb': 'https://thepiratebay.org/search/{}', 'godoc': 'https://godoc.org/{}', 'drs': 'https://docs.rs/{}', 'rs': 'https://doc.rust-lang.org/{}'}
