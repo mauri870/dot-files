@@ -1,5 +1,5 @@
 # Vi like editing
-set -o vi
+# set -o vi
 
 # I'm lazy to type n every time...
 alias vim="nvim"
