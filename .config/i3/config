@@ -1,9 +1,6 @@
 # Set mod key (Mod1=<Alt>, Mod4=<Super>)
 set $mod Mod4
 
-# Default monitor
-set $monitor eDP-1
-
 # Terminal
 set $term urxvt
 
@@ -23,7 +20,6 @@ bindsym XF86AudioLowerVolume exec $dec
 bindsym XF86AudioRaiseVolume exec $inc
 bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 50
 bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 50
-bindsym XF86Display exec --no-startup-id $HOME/.config/scripts/monitor
 
 new_window pixel 1
 new_float normal
@@ -99,6 +95,9 @@ workspace_auto_back_and_forth yes
 bindsym $mod+b workspace back_and_forth
 bindsym $mod+Tab workspace next_on_output
 bindsym $mod+Shift+b move container to workspace back_and_forth; workspace back_and_forth
+
+# Multiple monitors
+bindsym $mod+o move workspace to output left
 
 # split orientation
 bindsym $mod+h split h;exec notify-send 'tile horizontally'
@@ -281,13 +280,13 @@ exec --no-startup-id clipit
 # exec --no-startup-id multiload-ng-systray
 
 # Polybar
-exec_always --no-startup-id MONITOR=$monitor $HOME/.config/polybar/launch.sh
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # hide/unhide Polybar
 bindsym $mod+m exec ~/.config/polybar/toggle.sh
 
 # Autolock and fixes
-exec --no-startup-id xautolock -time 10 -locker blurlock
+exec --no-startup-id xautolock -time 30 -locker blurlock
 
 # Color palette used for the terminal
 set_from_resource $term_background background
