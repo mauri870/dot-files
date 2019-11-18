@@ -32,10 +32,10 @@ btrfs-progs
 bzip2
 caffeine-ng
 cheese
+chromium
 clipit
 cloc
 cmatrix
-compton
 conky-git
 coreutils
 cpupower
@@ -104,7 +104,6 @@ glibc
 gnome-calculator
 gnome-keyring
 gnome-shell-pomodoro
-google-chrome-beta
 google-cloud-sdk
 gotop-bin
 gparted
@@ -242,6 +241,7 @@ perl
 perl-file-mimeinfo
 php-pear
 phpstorm
+picom
 pkgconf
 plan9port
 pnmixer-git
