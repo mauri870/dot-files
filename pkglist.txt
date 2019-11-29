@@ -209,6 +209,7 @@ networkmanager-openvpn
 networkmanager-pptp
 networkmanager-vpnc
 nfs-utils
+ngrok
 nitrogen
 nmap
 nnn
@@ -258,6 +259,7 @@ pv
 pygtk
 python-pip
 python-pywal
+python37
 qemu
 qemu-arch-extra
 qt5-styleplugins
