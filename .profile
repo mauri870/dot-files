@@ -1,5 +1,5 @@
 # Vi like editing
-# set -o vi
+set -o vi
 
 # I'm lazy to type n every time...
 alias vim="nvim"
@@ -62,5 +62,4 @@ alias update='yay -Syu'
 alias qemu='qemu-system-x86_64'
 alias screencast='ffscreencast -c1 -a1 --oargs="-c:a flac" --cargs="-video_size 320x180"'
 
-# torch installation
-. /home/mauri870/torch/install/bin/torch-activate
+source $HOME/.cargo/env
