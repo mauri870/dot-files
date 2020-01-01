@@ -28,6 +28,9 @@ let g:rustfmt_autosave = 1
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'stamblerre/gocode', { 'rtp': 'vim', 'do': '~/.vim/plugged/gocode/vim/symlink.sh' }
 
+" C/C++
+Plug 'rhysd/vim-clang-format'
+
 " LanguageClient enhancements
 " Showing function signature and inline doc.
 Plug 'Shougo/echodoc.vim'
