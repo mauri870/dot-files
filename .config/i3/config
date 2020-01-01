@@ -51,7 +51,7 @@ bindsym $mod+Ctrl+m exec --no-startup-id pavucontrol
 
 # Start Applications
 bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
-bindsym $mod+F2 exec $(echo $BROWSER)
+bindsym $mod+F2 exec LC_ALL=C $(echo $BROWSER)
 bindsym $mod+F3 exec pcmanfm
 bindsym $mod+F4 exec $term -e nnn
 bindsym $mod+Shift+F3 exec gksu pcmanfm
