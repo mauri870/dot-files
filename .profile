@@ -1,11 +1,12 @@
-# Vi like editing
-set -o vi
-
 # I'm lazy to type n every time...
 alias vim="nvim"
 
 # Commands starting with space won't be included in the history
 export HISTCONTROL=ignorespace
+
+export ATHAME_ENABLED=1
+export ATHAME_SHOW_MODE=1
+export ATHAME_SHOW_COMMAND=1
 
 # General envs
 export BROWSER=qutebrowser

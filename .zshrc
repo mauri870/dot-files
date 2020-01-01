@@ -90,6 +90,8 @@ if [[ -r /usr/share/powerline/bindings/zsh/powerline.zsh ]]; then
     source /usr/share/powerline/bindings/zsh/powerline.zsh
 fi
 
+unset zle_bracketed_paste
+
 source ~/.profile
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
