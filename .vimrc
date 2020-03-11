@@ -37,6 +37,7 @@ autocmd FileType c ClangFormatAutoEnable
 Plug 'Shougo/echodoc.vim'
 
 " Fuzzy finder
+let $FZF_DEFAULT_COMMAND = 'rg --files --hidden'
 Plug 'airblade/vim-rooter'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
