@@ -30,6 +30,7 @@ Plug 'stamblerre/gocode', { 'rtp': 'vim', 'do': '~/.vim/plugged/gocode/vim/symli
 
 " C/C++
 Plug 'rhysd/vim-clang-format'
+autocmd FileType c ClangFormatAutoEnable 
 
 " LanguageClient enhancements
 " Showing function signature and inline doc.
@@ -46,6 +47,9 @@ Plug 'ncm2/ncm2'
 Plug 'ncm2/ncm2-bufword'
 Plug 'ncm2/ncm2-tmux'
 Plug 'ncm2/ncm2-path'
+
+" Terraform plugin
+Plug 'hashivim/vim-terraform'
 
 " Initialize plugin system
 call plug#end()
