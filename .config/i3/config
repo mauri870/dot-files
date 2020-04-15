@@ -4,6 +4,9 @@ set $mod Mod4
 # Terminal
 set $term urxvt
 
+# Screenshot path
+set $screenshot_path ~/Screenshots
+
 # Wallpaper
 set $wallpaper ~/w.jpg
 exec_always --no-startup-id wal -i $wallpaper
@@ -59,9 +62,13 @@ bindsym $mod+F5 exec $term -e 'mocp'
 bindsym $mod+t exec --no-startup-id pkill compton
 bindsym $mod+Ctrl+t exec --no-startup-id compton -b --xrender-sync-fence
 bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
-bindsym Print exec --no-startup-id ~/.config/scripts/i3-maim
+# Save a screenshot of the whole screen
+bindsym Print exec --no-startup-id flameshot full -p $screenshot_path
+# Save a screenshot of the selected window
+# TODO: Is there a way to do this with flameshot???
 bindsym $mod+Print --release exec --no-startup-id ~/.config/scripts/i3-maim -w
-bindsym $mod+Shift+Print --release exec --no-startup-id ~/.config/scripts/i3-maim -s
+# Open the flameshot GUI
+bindsym $mod+Shift+Print --release exec --no-startup-id flameshot gui -p $screenshot_path
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 bindsym $mod+c exec zenity --calendar
 
