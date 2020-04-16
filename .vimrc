@@ -30,7 +30,7 @@ Plug 'stamblerre/gocode', { 'rtp': 'vim', 'do': '~/.vim/plugged/gocode/vim/symli
 
 " C/C++
 Plug 'rhysd/vim-clang-format'
-autocmd FileType c ClangFormatAutoEnable 
+autocmd FileType c,cpp ClangFormatAutoEnable 
 
 " LanguageClient enhancements
 " Showing function signature and inline doc.
