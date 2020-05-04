@@ -44,7 +44,7 @@ c.tabs.background = True
 # used by prepending the search engine name to the search term, e.g.
 # `:open google qutebrowser`.
 # Type: Dict
-c.url.searchengines = {'DEFAULT': 'https://duckduckgo.com/?q={}', 'trans': 'https://translate.google.com/#auto/en/{}', 'so': 'https://stackoverflow.com/search?q={}', 'gh': 'https://github.com/search?q={}&type=Everything', 'r': 'https://reddit.com/r/{}', '4': 'https://4chan.org/{}', 'aw': 'https://wiki.archlinux.org?search={}', 'aur': 'https://aur.archlinux.org/packages/{}', 'tpb': 'https://thepiratebay.org/search/{}', 'godoc': 'https://godoc.org/{}', 'drs': 'https://docs.rs/{}', 'rs': 'https://doc.rust-lang.org/std/?search={}'}
+c.url.searchengines = {'DEFAULT': 'https://duckduckgo.com/?q={}', 'trans': 'https://translate.google.com/#auto/en/{}', 'so': 'https://stackoverflow.com/search?q={}', 'gh': 'https://github.com/search?q={}&type=Everything', 'r': 'https://reddit.com/r/{}', '4': 'https://4chan.org/{}', 'aw': 'https://wiki.archlinux.org?search={}', 'aur': 'https://aur.archlinux.org/packages/{}', 'tpb': 'https://thepiratebay.org/search/{}', 'godoc': 'https://godoc.org/{}', 'drs': 'https://docs.rs/{}', 'rs': 'https://doc.rust-lang.org/std/?search={}', 'wiki': 'https://en.wikipedia.org/w/index.php?search={}'}
 
 # Bindings for normal mode
 config.bind('<Alt-o>', 'open-editor')
