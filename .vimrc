@@ -1,3 +1,5 @@
+set encoding=utf-8
+
 " Plug init
 call plug#begin('~/.vim/plugged')
 
