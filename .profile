@@ -2,11 +2,11 @@
 alias vim="nvim"
 
 # Commands starting with space won't be included in the history
-export HISTCONTROL=ignorespace
+HISTCONTROL=ignoreboth
 
-export ATHAME_ENABLED=1
-export ATHAME_SHOW_MODE=1
-export ATHAME_SHOW_COMMAND=1
+ATHAME_ENABLED=1
+ATHAME_SHOW_MODE=1
+ATHAME_SHOW_COMMAND=1
 
 # General envs
 export BROWSER=qutebrowser
@@ -51,6 +51,7 @@ alias td='task done'
 
 # general aliases
 alias ls="exa"
+alias perm="stat -c '%a'"
 alias ll="exa -l"
 alias cb="sed -r \"s/\x1B\[([0-9]{1,2}(;[0-9]{1,2})?)?[m|K]//g\" | xclip -selection clipboard"
 alias weather='curl -s wttr.in | sed -n "1,7p"'
