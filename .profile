@@ -42,6 +42,9 @@ export PATH="/home/mauri870/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
+# Rust's Cargo
+source $HOME/.cargo/env
+
 # taskwarrior aliases
 alias tm='task modify'
 alias te='task edit'
@@ -64,4 +67,7 @@ alias update='yay -Syu'
 alias qemu='qemu-system-x86_64'
 alias screencast='ffscreencast -c1 -a1 --oargs="-c:a flac" --cargs="-video_size 320x180"'
 
-source $HOME/.cargo/env
+# useful functions
+mcd() { mkdir -p $1; cd $1 }
+cdl() { cd $1; ls }
+bak() { cp "$1"{,.bak}; }
