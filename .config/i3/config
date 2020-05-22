@@ -2,7 +2,7 @@
 set $mod Mod4
 
 # Terminal
-set $term urxvt
+set $term alacritty
 
 # Screenshot path
 set $screenshot_path ~/Screenshots
@@ -10,6 +10,7 @@ set $screenshot_path ~/Screenshots
 # Wallpaper
 set $wallpaper ~/w.jpg
 exec_always --no-startup-id wal -i $wallpaper
+exec_always --no-startup-id ~/.config/scripts/alacritty_xrdb.py
 exec_always --no-startup-id ~/.config/neofetch/replace_image.sh $wallpaper 
 
 # Pulseaudio stuff
@@ -28,7 +29,7 @@ new_window pixel 1
 new_float normal
 
 # Floating terminal
-exec --no-startup-id $term -name dropdown -e tmux
+exec --no-startup-id $term --class dropdown
 for_window [instance="dropdown"] floating enable; resize set 1920 600; move position 0 35; sticky enable; move scratchpad
 bindsym F12 [instance="dropdown"] scratchpad show
 bindsym Ctrl+F12 [instance="dropdown"] resize set 1920 600; move position 0 35
