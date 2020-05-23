@@ -11,7 +11,6 @@ set $screenshot_path ~/Screenshots
 set $wallpaper ~/w.jpg
 exec_always --no-startup-id wal -i $wallpaper
 exec_always --no-startup-id ~/.config/scripts/alacritty_xrdb.py
-exec_always --no-startup-id ~/.config/neofetch/replace_image.sh $wallpaper 
 
 # Pulseaudio stuff
 set $inc --no-startup-id pamixer --allow-boost -i 5
