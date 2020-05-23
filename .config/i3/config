@@ -29,7 +29,7 @@ new_window pixel 1
 new_float normal
 
 # Floating terminal
-exec --no-startup-id $term --class dropdown
+exec --no-startup-id $term --class dropdown -e tmux
 for_window [instance="dropdown"] floating enable; resize set 1920 600; move position 0 35; sticky enable; move scratchpad
 bindsym F12 [instance="dropdown"] scratchpad show
 bindsym Ctrl+F12 [instance="dropdown"] resize set 1920 600; move position 0 35
