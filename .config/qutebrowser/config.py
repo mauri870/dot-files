@@ -29,7 +29,7 @@ config.set('content.javascript.enabled', True, 'qute://*/*')
 # `{line0}`: Same as `{line}`, but starting from index 0. * `{column0}`:
 # Same as `{column}`, but starting from index 0.
 # Type: ShellCommand
-c.editor.command = ['urxvt', '-e', 'vim', '-f', '{file}', '-c', 'normal {line}G{column0}l']
+c.editor.command = ['alacritty', '-e', 'nvim', '-f', '{file}', '-c', 'normal {line}G{column0}l']
 
 # Open new tabs (middleclick/ctrl+click) in the background.
 # Type: Bool
