@@ -193,11 +193,12 @@ assign [class="qutebrowser"] $ws1
 
 # Apps
 assign [class="Slack"] $ws3
-assign [class="Franz"] $ws3
+assign [class="Discord"] $ws3
 
 # Torrent
-assign [class="^Transmission-gtk$"] $ws4
+assign [class="qbittorrent"] $ws4
 assign [class="gnome-pomodoro$"] $ws4
+assign [class="obs"] $ws4
 
 # Open specific applications in floating mode
 for_window [class="GParted"] floating enable; border normal
