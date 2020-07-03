@@ -70,7 +70,9 @@ bindsym $mod+Print --release exec --no-startup-id ~/.config/scripts/i3-maim -w
 # Open the flameshot GUI
 bindsym $mod+Shift+Print --release exec --no-startup-id flameshot gui -p $screenshot_path
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
+bindsym $mod+p exec zenity --color-selection
 bindsym $mod+c exec zenity --calendar
+bindsym $mod+Shift+c exec gnome-calculator
 
 focus_follows_mouse no
 focus_on_window_activation none
