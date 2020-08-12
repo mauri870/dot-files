@@ -23,6 +23,9 @@ Plug 'tpope/vim-eunuch'
 " Autocomplete
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+" Go fmt
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+
 " TextEdit might fail if hidden is not set.
 set hidden
 
