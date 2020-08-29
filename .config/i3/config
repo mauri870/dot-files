@@ -43,6 +43,9 @@ font xft:Fira Code 12
 # Use Mouse+$mod to drag floating windows
 floating_modifier $mod
 
+# toggle mic
+bindsym Menu exec amixer set Capture toggle && amixer get Capture | grep '\[off\]' && notify-send "MIC OFF" || notify-send "MIC ON"
+
 bindsym $mod+Return exec $term -e tmux
 
 bindsym $mod+Shift+q kill
