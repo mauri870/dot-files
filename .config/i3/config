@@ -188,6 +188,7 @@ bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
 # Coding
 assign [class="jetbrains-"] $ws2
 assign [class="^Code$"] $ws2
+assign [class="^Android Emulator$"] $ws2
 assign [class="acme"] $ws2
 
 # Browsers
