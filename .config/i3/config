@@ -62,8 +62,8 @@ bindsym $mod+F3 exec pcmanfm
 bindsym $mod+F4 exec $term -e nnn
 bindsym $mod+Shift+F3 exec gksu pcmanfm
 bindsym $mod+F5 exec $term -e 'mocp'
-bindsym $mod+t exec --no-startup-id pkill compton
-bindsym $mod+Ctrl+t exec --no-startup-id compton -b --vsync opengl
+bindsym $mod+t exec --no-startup-id pkill picom
+bindsym $mod+Ctrl+t exec --no-startup-id picom -b --vsync-use-glfinish
 bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
 # Save a screenshot of the whole screen
 bindsym Print --release exec --no-startup-id flameshot gui -p $screenshot_path
