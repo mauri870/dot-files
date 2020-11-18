@@ -44,7 +44,7 @@ font xft:Fira Code 12
 floating_modifier $mod
 
 # toggle mic
-bindsym Menu exec amixer set Capture toggle && amixer get Capture | grep '\[off\]' && notify-send "MIC OFF" || notify-send "MIC ON"
+bindsym $mod+m exec amixer set Capture toggle && amixer get Capture | grep '\[off\]' && notify-send "MIC OFF" || notify-send "MIC ON"
 
 bindsym $mod+Return exec $term -e tmux
 
@@ -296,7 +296,7 @@ exec --no-startup-id clipit
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # hide/unhide Polybar
-bindsym $mod+m exec ~/.config/polybar/toggle.sh
+bindsym $mod+Ctrl+n exec ~/.config/polybar/toggle.sh
 
 # Autolock and fixes
 exec --no-startup-id xautolock -time 30 -locker blurlock
