@@ -56,6 +56,7 @@ alias td='task done'
 alias ls="exa"
 alias perm="stat -c '%a'"
 alias ll="exa -l"
+alias smv="mv -i"
 alias cb="sed -r \"s/\x1B\[([0-9]{1,2}(;[0-9]{1,2})?)?[m|K]//g\" | xclip -selection clipboard"
 alias weather='curl -s wttr.in | sed -n "1,7p"'
 alias con="$EDITOR $HOME/.config/i3/config"
